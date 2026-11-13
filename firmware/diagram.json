@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Adrián Ulloa",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 38.4, "left": 4.84, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 92.4, "left": 138.2, "attrs": { "color": "red" } },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": -63.2, "left": 11.82, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 102.8,
+      "left": -189.2,
+      "rotate": 180,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "led1:A", "esp:5", "purple", [ "v0" ] ],
+    [ "led1:C", "esp:GND.3", "cyan", [ "v0" ] ],
+    [ "pir1:OUT", "esp:2", "green", [ "v9.6", "h124.66", "v172.8" ] ],
+    [ "servo1:GND", "esp:GND.1", "black", [ "h0", "v48" ] ],
+    [ "pir1:VCC", "esp:3V3", "red", [ "v0", "h-48", "v38.4" ] ],
+    [ "pir1:GND", "esp:GND.2", "black", [ "v0", "h38.14" ] ],
+    [ "servo1:PWM", "esp:13", "orange", [ "h19.2", "v47.8", "h-9.6" ] ]
+  ],
+  "dependencies": {}
+}
