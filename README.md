@@ -21,7 +21,8 @@ y evita servir de más si el gato se queda frente al plato.
 | LED (con 220 Ω) | GPIO 5 |
 | Alimentación | 3V3 y GND |
 
-![Diagrama](Comedero.png)
+![Diagrama](<img width="687" height="408" alt="Comedero png" src="https://github.com/user-attachments/assets/a12362a2-b3c5-46d6-b58f-b9edd55cdb67" />
+)
 
 ## Simulación
 Proyecto en Wokwi: https://wokwi.com/projects/480607078968297473 
